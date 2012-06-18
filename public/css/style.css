@@ -1,0 +1,60 @@
+.selected-row {
+	background-color: #F3F9B4 !important;
+}
+.domain-entry-table {
+	margin-bottom: 0 !important;
+}
+.back-to-top-link {
+	margin-bottom: 18px;
+}
+.navbar-fixed-top .container, .navbar-fixed-bottom .container {
+    margin-left: 30px;
+    width: 100%;
+}
+.help-inline {
+	/*color: red;*/
+}
+
+/* front page login links */
+a.login_provider {
+   width: 100px; 
+   height: 60px;
+   border: 1px solid #DDD;
+   margin: 3px;
+   float: left;
+}
+
+a.login_provider:hover {
+   border: 1px solid black;
+}
+
+a.associated_account {
+   width: 32px; height: 32px; margin: 3px; float: left;
+}
+
+a.facebook {
+   background: #FFF url(/img/small/facebook_gray.png) no-repeat center center;
+}
+
+a.facebook:hover {
+   background: #FFF url(/img/small/facebook.png) no-repeat center center;
+}
+
+a.twitter {
+   background: #FFF url(/img/small/twitter_gray.png) no-repeat center center;   
+}
+a.twitter:hover {
+   background: #FFF url(/img/small/twitter.png) no-repeat center center;
+}
+a.google {
+background: #FFF url(/img/small/google_gray.png) no-repeat center center
+}
+a.google:hover {
+background: #FFF url(/img/small/google.png) no-repeat center center
+}
+a.yahoo {
+background: #FFF url(/img/small/yahoo_gray.png) no-repeat center center;
+}
+a.yahoo:hover {
+background: #FFF url(/img/small/yahoo.png) no-repeat center center;
+}
