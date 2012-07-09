@@ -11,10 +11,9 @@ class Userbootstrap_Controller_App extends Useradmin_Controller_App {
             $scripts = array(
                 'js/jquery-1.7.2.min.js',
                 'js/bootstrap.min.js',
-                'js/bootstrap-tooltip.js',
             );
 			$this->template->styles = array_merge($this->template->styles, $styles);
-			$this->template->scripts = array_merge($this->template->scripts, $scripts);
+			$this->template->scripts = array_merge($scripts, $this->template->scripts);
 		}
 		parent::after();
 	}
