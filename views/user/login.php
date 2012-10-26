@@ -12,7 +12,7 @@ $form->info_class = 'info block';
 
 ?>
 <?php
-echo $form->open('user/login', array('class'=>'well span4 offset1'));
+echo $form->open('user/login', array('class'=>'well span4'));
 echo '<h2>'.__('Login').'</h2>';
 echo $form->label('username', __('Email or Username'));
 echo $form->input('username', null, array('class' => ''));
@@ -37,7 +37,7 @@ echo $form->close();
 $registerEnabled = Kohana::$config->load('useradmin.register_enabled');
 $options = array_filter(Kohana::$config->load('useradmin.providers'));
 if($registerEnabled || !empty($options)) {
-	echo '<div class="well span4">';
+	echo '<br style="clear:both;" class="visible-phone" /> <div class="well span4">';
 	if($registerEnabled)
 		echo '<h4>'.__('Don\'t Have An Account?').'</h4><br />'.Html::anchor('user/register', __('Register A New Account')).'.';
 	if($registerEnabled && !empty($options))

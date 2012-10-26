@@ -7,6 +7,7 @@ class Userbootstrap_Controller_App extends Useradmin_Controller_App {
             $styles = array(
                 'css/style.css' => 'screen',
                 'css/bootstrap.min.css' => 'screen',
+                'css/bootstrap-responsive.css' => 'screen',
             );
             $scripts = array(
                 'js/jquery-1.7.2.min.js',
