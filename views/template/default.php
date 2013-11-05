@@ -32,14 +32,14 @@
              <?php
              $session = Session::instance();
              if (Auth::instance()->logged_in()){
-                echo '<li>'.Html::anchor('/', 'Home').'</li>';
+                echo '<li>'.HTML::anchor('/', 'Home').'</li>';
 				if(Auth::instance()->logged_in('admin'))
-                	echo '<li>'.Html::anchor('admin_user', 'User Management').'</li>';
-                echo '<li>'.Html::anchor('user/profile', 'My Profile').'</li>';
-                echo '<li>'.Html::anchor('user/logout', 'Log Out').'</li>';
+                	echo '<li>'.HTML::anchor('admin_user', 'User Management').'</li>';
+                echo '<li>'.HTML::anchor('user/profile', 'My Profile').'</li>';
+                echo '<li>'.HTML::anchor('user/logout', 'Log Out').'</li>';
              } else {
-                //echo '<li>'.Html::anchor('user/register', 'Register').'</li>';
-                echo '<li>'.Html::anchor('user/login', 'Log In').'</li>';
+                //echo '<li>'.HTML::anchor('user/register', 'Register').'</li>';
+                echo '<li>'.HTML::anchor('user/login', 'Log In').'</li>';
              }
              ?>
             </ul>

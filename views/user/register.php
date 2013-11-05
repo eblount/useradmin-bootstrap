@@ -1,6 +1,6 @@
 
    <h1><?php echo __('Register'); ?></h1>
-      <div class="info" style="width: 415px;"><small><?php echo __('Already have a user account?').' '.Html::anchor('user/login', __('Log in here.')); ?></small></div>
+      <div class="info" style="width: 415px;"><small><?php echo __('Already have a user account?').' '.HTML::anchor('user/login', __('Log in here.')); ?></small></div>
       <br>
       <p><?php echo __('Fill in the information below to register.'); ?></p>
 

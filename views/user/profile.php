@@ -4,8 +4,8 @@
 </div>
 <div class="span3" style="float: right;">
 	<ul class="nav nav-pills">
-         <li><?php echo Html::anchor('user/profile_edit', __('Edit profile')); ?></li>
-         <li><?php echo Html::anchor('user/unregister', __('Delete account')); ?></li>
+         <li><?php echo HTML::anchor('user/profile_edit', __('Edit profile')); ?></li>
+         <li><?php echo HTML::anchor('user/unregister', __('Delete account')); ?></li>
 	</ul>
 </div>
 <br style="clear: both;">

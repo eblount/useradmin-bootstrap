@@ -10,7 +10,7 @@
 </div>
 <div class="span2" style="float: right;">
 	<ul class="nav nav-pills">
-		<li><?php echo Html::anchor('admin_user/edit', __('Add new user'))?></li>
+		<li><?php echo HTML::anchor('admin_user/edit', __('Add new user'))?></li>
 	</ul>
 </div>
 <br style="clear: both;">
@@ -28,7 +28,7 @@ foreach ($users as $user) {
    $row['last_login'] = Helper_Format::relative_time($row['last_login']);
 //   $row['last_failed_login'] = Helper_Format::relative_time(strtotime($row['last_failed_login']));
    // add actions
-   $row['actions'] = Html::anchor('admin_user/edit/'.$row['id'], __('Edit')).' | '.Html::anchor('admin_user/delete/'.$row['id'], __('Delete'));
+   $row['actions'] = HTML::anchor('admin_user/edit/'.$row['id'], __('Edit')).' | '.HTML::anchor('admin_user/delete/'.$row['id'], __('Delete'));
    // set roles
    $row['role'] = '';
    foreach($user->roles->where('name', '!=', 'login')->find_all() as $role) {

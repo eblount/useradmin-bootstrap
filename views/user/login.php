@@ -19,12 +19,12 @@ echo $form->input('username', null, array('class' => ''));
 
 echo $form->label('password', __('Password'));
 echo $form->password('password', null, array('class' => ''));
-echo '<p><small> '.Html::anchor('user/forgot', __('Forgot your password?')).'</small></p>';
+echo '<p><small> '.HTML::anchor('user/forgot', __('Forgot your password?')).'</small></p>';
 
 $authClass = new ReflectionClass(get_class(Auth::instance()));
 if($authClass->hasMethod('auto_login'))
 {
-	echo '<label for="remember" class="checkbox">'.Kohana_Form::checkbox('remember','remember',false,array()).
+	echo '<label for="remember" class="checkbox">'.Kohana_FORM::checkbox('remember','remember',false,array()).
             __('Remember me').'</label>'.
             $form->submit(NULL, __('Login'), array("class"=>"btn"));
 }
@@ -39,7 +39,7 @@ $options = array_filter(Kohana::$config->load('useradmin.providers'));
 if($registerEnabled || !empty($options)) {
 	echo '<div class="well span4">';
 	if($registerEnabled)
-		echo '<h4>'.__('Don\'t Have An Account?').'</h4><br />'.Html::anchor('user/register', __('Register A New Account')).'.';
+		echo '<h4>'.__('Don\'t Have An Account?').'</h4><br />'.HTML::anchor('user/register', __('Register A New Account')).'.';
 	if($registerEnabled && !empty($options))
 		echo '<br style="clear: both;"><br style="clear: both;">';
 	if(!empty($options)) {
