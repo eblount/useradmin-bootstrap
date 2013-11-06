@@ -3,18 +3,18 @@
    <div class="content">
 <?php
 
-echo FORM::open('user/associate/'.$provider_name, array('style' => 'display: inline;'));
+echo Form::open('user/associate/'.$provider_name, array('style' => 'display: inline;'));
 
 echo '<p>You are about to associate your user account with your '.ucfirst($provider_name).' account. After this, you can log in using that account. Are you sure?</p>';
 
-echo FORM::hidden('confirmation', 'Y');
+echo Form::hidden('confirmation', 'Y');
 
-echo FORM::submit(NULL, 'Yes');
-echo FORM::close();
+echo Form::submit(NULL, 'Yes');
+echo Form::close();
 
-echo FORM::open('user/profile', array('style' => 'display: inline; padding-left: 10px;'));
-echo FORM::submit(NULL, 'Cancel');
-echo FORM::close();
+echo Form::open('user/profile', array('style' => 'display: inline; padding-left: 10px;'));
+echo Form::submit(NULL, 'Cancel');
+echo Form::close();
 ?>
    </div>
 </div>

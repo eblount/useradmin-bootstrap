@@ -29,7 +29,7 @@ echo $form->open('admin_user/edit/'.$id);
   <?php
       foreach($all_roles as $role => $description) {
          echo '<tr>';
-         echo '<td>'.FORM::checkbox('roles['.$role.']', $role, (in_array($role, $user_roles) ? true : false)).'</td>';
+         echo '<td>'.Form::checkbox('roles['.$role.']', $role, (in_array($role, $user_roles) ? true : false)).'</td>';
          echo '<td>'.ucfirst($role).'</td><td>'.$description.'</td>';
          echo '</tr>';
       }

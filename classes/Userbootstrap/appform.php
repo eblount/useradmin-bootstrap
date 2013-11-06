@@ -51,7 +51,7 @@ class Userbootstrap_Appform extends Useradmin_Appform {
 	{
 		$attributes = AppfORM::add_class($attributes, 'text');
 		$this->load_values($name, $value, $attributes);
-		return Kohana_FORM::input($name, $value, $attributes)
+		return Kohana_Form::input($name, $value, $attributes)
 			. $this->addAlertSpan((isset($this->errors[$name])?$this->errors[$name]:NULL), $attributes);
 	}
 
@@ -67,7 +67,7 @@ class Userbootstrap_Appform extends Useradmin_Appform {
 	{
 		$attributes = AppfORM::add_class($attributes, 'password');
 		$this->load_values($name, $value, $attributes);
-		return Kohana_FORM::password($name, $value, $attributes)
+		return Kohana_Form::password($name, $value, $attributes)
 			. $this->addAlertSpan((isset($this->errors[$name])?$this->errors[$name]:NULL), $attributes);
 	}
 
@@ -82,7 +82,7 @@ class Userbootstrap_Appform extends Useradmin_Appform {
 	public function file($name, array $attributes = NULL)
 	{
 		$this->load_values($name, $dummy, $attributes);
-		return Kohana_FORM::file($name, $attributes)
+		return Kohana_Form::file($name, $attributes)
 			. $this->addAlertSpan((isset($this->errors[$name])?$this->errors[$name]:NULL), $attributes);
 	}
 
@@ -98,7 +98,7 @@ class Userbootstrap_Appform extends Useradmin_Appform {
 	public function checkbox($name, $value = NULL, $checked = FALSE, array $attributes = NULL)
 	{
 		$this->load_values($name, $value, $attributes);
-		return Kohana_FORM::checkbox($name, $value, $checked, $attributes)
+		return Kohana_Form::checkbox($name, $value, $checked, $attributes)
 			. $this->addAlertSpan((isset($this->errors[$name])?$this->errors[$name]:NULL), $attributes);
 	}
 
@@ -114,7 +114,7 @@ class Userbootstrap_Appform extends Useradmin_Appform {
 	public function radio($name, $value = NULL, $checked = FALSE, array $attributes = NULL)
 	{
 		$this->load_values($name, $value, $attributes);
-		return Kohana_FORM::radio($name, $value, $checked, $attributes)
+		return Kohana_Form::radio($name, $value, $checked, $attributes)
 			. $this->addAlertSpan((isset($this->errors[$name])?$this->errors[$name]:NULL), $attributes);
 	}
 
@@ -130,7 +130,7 @@ class Userbootstrap_Appform extends Useradmin_Appform {
 	public function textarea($name, $body = '', array $attributes = NULL, $double_encode = TRUE)
 	{
 		$this->load_values($name, $body, $attributes);
-		return Kohana_FORM::textarea($name, $body, $attributes, $double_encode)
+		return Kohana_Form::textarea($name, $body, $attributes, $double_encode)
 			. $this->addAlertSpan((isset($this->errors[$name])?$this->errors[$name]:NULL), $attributes);
 	}
 
@@ -146,7 +146,7 @@ class Userbootstrap_Appform extends Useradmin_Appform {
 	public function select($name, array $options = NULL, $selected = NULL, array $attributes = NULL)
 	{
 		$this->load_values($name, $selected, $attributes);
-		return Kohana_FORM::select($name, $options, $selected, $attributes)
+		return Kohana_Form::select($name, $options, $selected, $attributes)
 			. $this->addAlertSpan((isset($this->errors[$name])?$this->errors[$name]:NULL), $attributes);
 	}
 }

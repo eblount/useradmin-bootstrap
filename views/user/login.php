@@ -24,7 +24,7 @@ echo '<p><small> '.HTML::anchor('user/forgot', __('Forgot your password?')).'</s
 $authClass = new ReflectionClass(get_class(Auth::instance()));
 if($authClass->hasMethod('auto_login'))
 {
-	echo '<label for="remember" class="checkbox">'.Kohana_FORM::checkbox('remember','remember',false,array()).
+	echo '<label for="remember" class="checkbox">'.Kohana_Form::checkbox('remember','remember',false,array()).
             __('Remember me').'</label>'.
             $form->submit(NULL, __('Login'), array("class"=>"btn"));
 }
